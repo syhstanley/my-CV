@@ -1,0 +1,127 @@
+\documentclass[10pt,a4paper]{article}
+
+% Packages
+\usepackage{geometry}
+\geometry{top=0.15in, bottom=0.3in, left=0.4in, right=0.4in}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\defaultfontfeatures{Path=fonts/}
+\usepackage{fontawesome}
+\usepackage{xeCJK}
+
+\setCJKmainfont{Noto Serif CJK TC}
+
+% Formatting
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+
+\titleformat{\section}{\Large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{8pt}
+
+% Custom lists
+\setlist[itemize]{leftmargin=12pt, topsep=1pt, itemsep=1pt, parsep=0pt, partopsep=0pt, label=\raisebox{0.3ex}{\scriptsize$\bullet$}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\vspace{24pt}
+\begin{center}
+{\huge \textbf{Yu-Hong Shen}} \\[6pt]
+\faPhone\ (+886) 922-663-724 \quad
+\faEnvelope\ \href{mailto:stanley.shen2003@gmail.com}{stanley.shen2003@gmail.com} \quad
+\faGithub\ \href{https://github.com/stanleyshen2003}{stanleyshen2003} \quad
+\faLinkedin\ \href{https://linkedin.com/in/yuhongshen}{yuhongshen}
+\end{center}
+\vspace{-20pt}
+%----------EDUCATION-----------------
+\section*{Education}
+
+\textbf{National Yang Ming Chiao Tung University} \hfill Hsinchu, Taiwan \\
+M.S. Computer Science \hfill Sep. 2025 -- Now
+\begin{itemize}
+  \item Overall GPA: 4.23/4.3
+  \item Conducting research in Wireless Internet Lab.
+\end{itemize}
+
+\textbf{National Yang Ming Chiao Tung University} \hfill Hsinchu, Taiwan \\
+B.S. Computer Science \hfill Sep. 2021 -- Jun. 2025
+\begin{itemize}
+  \item Overall GPA: 4.2/4.3, Rank: 17/168
+  \item Conducted research in Human-centered Intelligent Systems Lab.
+  \item Relevant Courses: Algorithm, Operating System, System Administration, Network Administration, Cloud Native, Deep Learning, Reinforcement Learning, Microprocessor.
+\end{itemize}
+
+%-----------PUBLICATIONS-----------------
+\section*{Publications}
+
+\textbf{Rate-Assured GPU Inference for 5G AI Slices} \\
+Yu-Hong Shen, Wen-Ju Chiang, Hsiang-Ming Hung, Yen-Ting Kuo, Chien-Chao Tseng, Meng-Hsun Tsai
+\begin{itemize}
+  \item ACM SIGCOMM (poster). \href{https://doi.org/10.1145/sigcomm}{\textbf{Link}}.
+  \item Extended 5G network slicing with GPU-side scheduling to enforce end-to-end latency guarantees for edge AI.
+\end{itemize}
+
+\textbf{AgentOps: A Kubernetes-based DevOps Framework for Managing Agentic AI Lifecycle} \\
+Yu-Hong Shen, Wen-Ju Chiang, Yong-Xiang Zhan, Chien-Chao Tseng
+\begin{itemize}
+  \item IEEE ICASI.
+  \item Designed a Kubernetes-based framework decoupling agent artifacts for independent CI/CD and observability.
+\end{itemize}
+
+\textbf{Hybrid L7/eBPF Proxy: User Space Classification with Kernel-Space Socket Splicing} \\
+Wen-Ju Chiang, Hsiang-Ming Hung, Yu-Hong Shen, Yen-Ting Kuo, Chien-Chao Tseng, Meng-Hsun Tsai
+\begin{itemize}
+  \item USENIX NSDI (poster).
+  \item Designed a hybrid L7/eBPF proxy that achieves near kernel-level performance with full L7 visibility.
+\end{itemize}
+
+\textbf{Mitigating Cross-Modal Distraction and Ensuring Geometric Feasibility via Affordance-Guided and Self-Consistent MLLMs for Task Planning in Instruction-Following Manipulation} \\
+Yu-Hong Shen, Chuan-Yu Wu, Yi-Ru Yang, Yen-Ling Tai, Yi-Ting Chen
+\begin{itemize}
+  \item CoRL 2025 Workshop iCare. \href{https://hcis-lab.github.io/Affordance-Guided-Self-Consistent-MLLM/}{\textbf{Project Page}}.
+  \item Developed an affordance-guided, self-consistent MLLM planner to reduce distraction and enforce feasibility.
+\end{itemize}
+
+%-----------INTERNSHIP-----------------
+\section*{Internship}
+
+\textbf{AMD | Foundry Product Operation Intern} \hfill Hsinchu, Taiwan \\
+\hfill Jun. 2026 -- Aug. 2026
+\begin{itemize}
+  \item Built parser and visualizer for SMT8 specs, flagging misconfigurations against profiling data and diffing across versions.
+  \item Trained DL model detecting wafer map patterns; cut LLM labeling tokens 80\% via semi-supervised learning.
+\end{itemize}
+
+\textbf{TSMC | IT BSID DevOps Engineer Intern} \hfill Hsinchu, Taiwan \\
+\hfill Jul. 2025 -- Aug. 2025
+\begin{itemize}
+  \item Designed and implemented both frontend and backend services using Java and Next.js.
+  \item Deployed containerized services to a Kubernetes cluster using Azure DevOps pipelines.
+\end{itemize}
+
+\textbf{ASML Holding N.V. | D\&E Software Engineer Intern} \hfill Taipei, Taiwan \\
+\hfill Jan. 2025 -- Jun. 2025
+\begin{itemize}
+  \item Conducted a comprehensive survey on Java 8 to 11 migration using OpenRewrite.
+  \item Leveraged existing tools and implemented an automated performance analysis pipeline.
+\end{itemize}
+
+\textbf{CloudMile Inc. | Technical Account Manager Intern} \hfill Taipei, Taiwan \\
+\hfill Jul. 2024 -- Dec. 2024
+\begin{itemize}
+  \item Participated in PoCs to validate cloud solutions for clients, enhancing technical problem-solving skills.
+  \item Designed and implemented innovative ideas for clients, successfully deploying them to production.
+\end{itemize}
+
+%-----------CERTIFICATES-----------------
+\section*{Certificates}
+\textbf{TOEIC:} Total: 965 / Reading: 485 / Listening: 480 \\
+\textbf{GEPT:} High-Intermediate --- Total: 225 / Reading: 117 / Listening: 108 \\
+\textbf{GCP Professional Cloud Architect} --- Certified during Internship at CloudMile.
+
+\end{document}
